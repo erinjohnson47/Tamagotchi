@@ -43,5 +43,6 @@ class Tomagotchi {
     //method here to reproduce
     //method here to exercise
 }
+const tomaPet = new Tomagotchi("TomaPet")
 
 //future extention of class here to include superpowers
