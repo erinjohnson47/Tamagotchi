@@ -49,6 +49,7 @@ const button = document.querySelector("#start");
 button.addEventListener("click", () => {
     play.getName();
     button.style.display = 'none';
+    play.makePet();
 })
 
 const play = {
@@ -57,6 +58,13 @@ const play = {
         this.petName = window.prompt("Let's get started! What would you like to name your pet?")
         console.log(this.petName);
         this.petName = new Tomagotchi(this.petName);
+    },
+    makePet() {
+        const babyPet = document.createElement('img');
+        babyPet.id='baby';
+        babyPet.src = "images/egg.png";
+        const petDiv = document.querySelector("#pet");
+        petDiv.appendChild(babyPet);
     }
 }
 // makeNewPet () = new Tomagotchi(`${prompt("What is your pet's name?")}`)
