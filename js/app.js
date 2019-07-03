@@ -43,6 +43,22 @@ class Tomagotchi {
     //method here to reproduce
     //method here to exercise
 }
-const tomaPet = new Tomagotchi("TomaPet")
+
+const button = document.querySelector("#start");
+
+button.addEventListener("click", () => {
+    play.getName();
+    button.style.display = 'none';
+})
+
+const play = {
+    petName: '',
+    getName() {
+        this.petName = window.prompt("Let's get started! What would you like to name your pet?")
+        console.log(this.petName);
+        this.petName = new Tomagotchi(this.petName);
+    }
+}
+// makeNewPet () = new Tomagotchi(`${prompt("What is your pet's name?")}`)
 
 //future extention of class here to include superpowers

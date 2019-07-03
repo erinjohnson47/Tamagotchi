@@ -17,4 +17,26 @@ background image possibilities:
 NO MATTER WHAT FRAMEWORK
     Scope
     Single function
-    
+
+CSS Animation
+div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    animation: test 3s infinite;
+}
+@keyframes test {
+    0% {
+        background-color: green;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: purple;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+}
