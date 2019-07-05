@@ -65,6 +65,10 @@ const play = {
         babyPet.src = "images/egg.png";
         const petDiv = document.querySelector("#pet");
         petDiv.appendChild(babyPet);
+    },
+    display() {
+        const display = document.createElement('div');
+        
     }
 }
 // makeNewPet () = new Tomagotchi(`${prompt("What is your pet's name?")}`)
